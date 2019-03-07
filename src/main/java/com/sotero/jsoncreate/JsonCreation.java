@@ -23,7 +23,7 @@ public class JsonCreation {
 	static Statement stmt;
 	static ResultSet rs;
 	static ResultSetMetaData rsmd;
-	static Properties properties;
+	static Properties properties = new Properties();
 
 	public static void main(String[] args) {
 
