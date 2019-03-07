@@ -27,7 +27,7 @@ import com.mongodb.util.JSONParseException;
 
 public class APITesting {
 
-	public static void main(String[] args) {
+	public void API(String path, String fileName){
 		// TODO Auto-generated method stub
 		double overallElapsedTimes = 0;
 		long overallTime = 0;
@@ -36,10 +36,10 @@ public class APITesting {
 		PrintWriter writingCSV = null;
 		try{
 			
-		new PrintWriter(new File(System.getProperty("user.dir")+"/TestHarness.csv"));
+		new PrintWriter(new File(System.getProperty("user.dir")+"/"+fileName+".csv"));
 		StringBuilder builderContents = new StringBuilder();
 		builderContents.append("FILENAME,RECORDS,ELAPSED_TIME,OVERALL_TIME"+"\n");
-		String path = args[0].trim();
+	//	String path = args[0].trim();
 		File file = new File(path);
 		//Checking the path whether is a Directory or not
 		if(!file.isDirectory()){
