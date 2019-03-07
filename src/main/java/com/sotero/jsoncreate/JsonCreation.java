@@ -133,7 +133,7 @@ public class JsonCreation {
 					+ properties.getProperty("jdbc.port").trim() + "/" + properties.getProperty("jdbc.db").trim(),
 					properties.getProperty("jdbc.user").trim(), properties.getProperty("jdbc.password").trim());
 			String query = properties.getProperty("sql.query").toUpperCase();
-			Statement stmt = con.createStatement();
+			stmt = con.createStatement();
 			rs = stmt.executeQuery(query);
 
 			for (int i = 0; i <= 50; i++) {
