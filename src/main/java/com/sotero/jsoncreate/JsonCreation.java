@@ -48,6 +48,10 @@ public class JsonCreation {
 		int queryFile = 1;
 		for (String query : queries) {
 			try {
+				File directory = new File("/home/ec2-user/JsonCreation/");
+				    if (! directory.exists()){
+        				  directory.mkdir();
+				       }    
 				
 				Arrays.stream(new File("/home/ec2-user/JsonCreation/").listFiles()).forEach(File::delete);
 
