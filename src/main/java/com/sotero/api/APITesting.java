@@ -36,7 +36,7 @@ public class APITesting {
 		PrintWriter writingCSV = null;
 		try{
 			
-		new PrintWriter(new File(System.getProperty("user.dir")+"/"+fileName+".csv"));
+		writingCSV = new PrintWriter(new File(System.getProperty("user.dir")+"/"+fileName+".csv"));
 		StringBuilder builderContents = new StringBuilder();
 		builderContents.append("FILENAME,RECORDS,ELAPSED_TIME,OVERALL_TIME"+"\n");
 	//	String path = args[0].trim();
