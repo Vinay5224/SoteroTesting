@@ -91,7 +91,7 @@ public class JsonCreation {
 				// Creating Records
 				int batchCount = 1;
 				int limit = Integer
-						.parseInt(properties.getProperty("sql.query").toUpperCase().split("LIMIT ")[1].trim());
+						.parseInt(query.toUpperCase().split("LIMIT ")[1].trim());
 				JSONArray innerArray = new JSONArray();
 				while (rs.next()) {
 
