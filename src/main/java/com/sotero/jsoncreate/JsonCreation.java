@@ -89,7 +89,7 @@ public class JsonCreation {
 				jsonObj.put("tid", "0");
 
 				// Creating Records
-				int batchCount = 0;
+				int batchCount = 1;
 				int limit = Integer
 						.parseInt(properties.getProperty("sql.query").toUpperCase().split("LIMIT ")[1].trim());
 				JSONArray innerArray = new JSONArray();
